@@ -6,15 +6,15 @@ import '@vime/core/themes/default.css'
 
 const GET_LESSON_BY_SLUG_QUERY = gql`
     query GetLessonBySlug ($slug:String) {
-        lesson(where: {slug: $slug}) {
-        title
-        videoId
-        description
-        teacher {
-            avatarURL
-            bio
-            name
-        }
+            lesson(where: {slug: $slug}) {
+            title
+            videoId
+            description
+            teacher {
+                avatarURL
+                bio
+                name
+            }
         }
     }
   `   
